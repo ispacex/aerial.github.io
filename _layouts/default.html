@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: "en" }}">
+<html lang="en">
   <head>
     <title>Aerial Yerevan</title>
     <style>
@@ -7,17 +7,18 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: top;
             height: 100vh;
             background-color: #dac2e4;
         }
-        img {
-            max-width: 100%;
-            max-height: 100%;
+        img.ae {
+	    width: 50%;
+            max-width: 50%;
+	    display: inline-block;
         }
     </style>
   </head>
-  <body a="{{ site.theme_config.appearance | default: "auto" }}">
-      <img src="aerialyvn.jpg" alt="Aerial Yerevan">
+  <body a="auto">
+      <a href="https://www.instagram.com/aerial_yerevan/" target="_blank" style="text-align: center; vertical-align: top; padding-top: 5%; padding-bottop: 30%;"><img src="aerialyvn.jpg" class="ae" alt="Aerial Yerevan" /><br /><img style="align: top; display: inline-block; max-height: 40pt;" src="new-instagram-logo-glyph.svg" alt="" /></a>
   </body>
 </html>
